@@ -36,7 +36,7 @@ public class Model {
         String[] northWestDiap = compas.getNorthWest().split("-");
         String side;
 
-        if(degree>=Integer.parseInt(northDiap[0]) && degree<360 || degree<Integer.parseInt(northDiap[1]) && degree>0){
+        if(degree>=Integer.parseInt(northDiap[0]) && degree<=360 || degree<Integer.parseInt(northDiap[1]) && degree>=0){
             side = "North";
         }
         else if (degree>=Integer.parseInt(northEastDiap[0]) && degree<Integer.parseInt(northEastDiap[1])){
